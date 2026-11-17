@@ -53,7 +53,7 @@ rl = ReinforceSMEFT(
         "max_steps": 10,
         "seed": 42,
         "min_step_delta_chi2": 2.0,
-        "use_critic": False,
+        "use_critic": True,
     },
 )
 ```
