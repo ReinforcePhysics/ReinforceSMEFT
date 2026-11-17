@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reinforcesmeft"
+version = "0.2.0"
+description = "Reinforcement-learning search for EFT operator solutions using flavio and wilson"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Jacky Kumar (jacky.kumar@umontreal.ca)"}]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "torch>=2.0",
+  "flavio>=2.5",
+  "wilson>=2.4",
+  "numdifftools>=0.9.41",
+]
+
+[project.optional-dependencies]
+mpi = ["mpi4py>=3.1"]
+dev = ["pytest>=7", "build>=1.0", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/anomalies"
+Repository = "https://github.com/USERNAME/anomalies"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
