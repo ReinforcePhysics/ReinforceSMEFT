@@ -13,7 +13,7 @@ pip install .
 or directly from GitHub:
 
 ```bash
-pip install git+https://github.com/jackypheno/ReinforceSMEFT.git
+pip install git+https://github.com/ReinforcePhysics/ReinforceSMEFT.git
 ```
 
 MPI is not required for the standard API. If you want to use a separate MPI coefficient-generation workflow, install:
