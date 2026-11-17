@@ -346,10 +346,12 @@ If you use `ReinforceSMEFT` in your research, please cite:
 [arXiv:2611.21439](https://arxiv.org/abs/2611.21439)
 
 ```bibtex
-@article{ReinforceSMEFT,
-    title   = {A Reinforcement Learning Method to Navigate New Physics Interactions},
-    eprint  = {2611.21439},
-    archivePrefix = {arXiv},
-    primaryClass  = {hep-ph},
-    year    = {2026}
+@misc{kumar2026reinforcementlearningmethodnavigate,
+      title={A Reinforcement Learning Method to Navigate SMEFT Operator Space}, 
+      author={Jacky Kumar},
+      year={2026},
+      eprint={2611.21439},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2611.21439}, 
 }
