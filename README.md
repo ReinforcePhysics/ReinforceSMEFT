@@ -337,3 +337,19 @@ from reinforcesmeft import ReinforceSMEFT
 ```
 
 The package name is `reinforcesmeft`, while the main user-facing class is `ReinforceSMEFT`.
+
+## Citation
+
+If you use `ReinforceSMEFT` in your research, please cite:
+
+**A Reinforcement Learning Method to Navigate New Physics Interactions**  
+[arXiv:2611.21439](https://arxiv.org/abs/2611.21439)
+
+```bibtex
+@article{ReinforceSMEFT,
+    title   = {A Reinforcement Learning Method to Navigate New Physics Interactions},
+    eprint  = {2611.21439},
+    archivePrefix = {arXiv},
+    primaryClass  = {hep-ph},
+    year    = {2026}
+}
