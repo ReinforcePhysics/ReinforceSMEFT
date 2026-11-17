@@ -136,7 +136,7 @@ rl = ReinforceSMEFT(
     NP_scale=1000.0,
     observables=observables,
     measurements=None,
-    th_predictions="ewp_linear_coefficients_all.json",
+    th_predictions="linear_coefficients_all.json",
     hyper_para={
         "n_batches": 300,
         "rollouts_per_batch": 25,
@@ -278,7 +278,7 @@ rl = ReinforceSMEFT(
     EFT="SMEFT",
     Basis="Warsaw",
     NP_scale=1000.0,
-    observables=constraints_ewp,
+    observables=observables,
     measurements=None,
     th_predictions=COEFFICIENTS_PATH,
     hyper_para={
