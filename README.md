@@ -1,6 +1,6 @@
 # ReinforceSMEFT
 
-`reinforcesmeft` is a Python package for reinforcement-learning searches over SMEFT operator space. It combines a linearized `flavio`/`wilson` observable backend, bounded least-squares coefficient fits, and an actor-critic RL policy to discover high-quality multi-operator solutions to explain an input dataset of measurements.
+`reinforcesmeft` is a Python package for reinforcement-learning searches over SMEFT operator space. It combines a linearized `flavio`/`wilson` observable backend, $\chi^2$-minimization using Minuit, and an actor-critic RL policy to discover high-quality multi-operator solutions to explain an input dataset of measurements.
 
 ## Installation
 
