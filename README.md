@@ -342,6 +342,67 @@ from reinforcesmeft import ReinforceSMEFT
 
 The package name is `reinforcesmeft`, while the main user-facing class is `ReinforceSMEFT`.
 
+
+## Docker
+
+ReinforceSMEFT can be run in a Docker container to provide a reproducible Python environment without installing the package dependencies locally.
+
+### Build the Docker image
+
+Clone the repository and build the image:
+
+```bash
+git clone https://github.com/ReinforcePhysics/ReinforceSMEFT.git
+cd ReinforceSMEFT
+
+docker build -t reinforcesmeft .
+```
+
+The Docker image uses Python 3.11 and a CPU-only installation of PyTorch.
+
+### Run an example
+
+The repository can be mounted into the container so that input files and generated results remain available on the host machine:
+
+```bash
+docker run --rm \
+  -v "$(pwd):/workspace" \
+  -w /workspace \
+  reinforcesmeft \
+  examples/test.py
+```
+
+The example loads the coefficient data from:
+
+```text
+examples/linear_coefficients_2.json
+```
+
+and writes the generated output files to:
+
+```text
+results/
+```
+
+Because the repository is mounted into `/workspace`, the results generated inside the container are directly available in the local `results/` directory after the container exits.
+
+### Run other scripts
+
+Any Python script in the repository can be executed using the same Docker image:
+
+```bash
+docker run --rm \
+  -v "$(pwd):/workspace" \
+  -w /workspace \
+  reinforcesmeft \
+  path/to/script.py
+```
+
+The Docker image only contains the ReinforceSMEFT software environment and dependencies. Scripts, input datasets, configurations, checkpoints, and results can therefore be changed without rebuilding the image.
+
+Rebuild the image only when the Dockerfile, package dependencies, or ReinforceSMEFT installation itself changes.
+
+
 ## Citation
 
 If you use `ReinforceSMEFT` in your research, please cite:
