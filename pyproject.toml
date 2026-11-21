@@ -7,14 +7,13 @@ name = "reinforcesmeft"
 version = "0.2.0"
 description = "Reinforcement-learning search for EFT operator solutions using flavio and wilson"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11,<3.12"
 license = {text = "MIT"}
 authors = [{name = "Jacky Kumar (jacky.kumar@umontreal.ca)"}]
 dependencies = [
   "numpy>=1.24,<2",
   "scipy>=1.10",
   "pandas>=2,<3",
-  "torch>=2.0",
   "flavio>=2.5",
   "wilson>=2.4",
   "particle<0.26",
@@ -22,6 +21,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+
+torch = [
+    "torch>=2.0"
+]
+
 mpi = ["mpi4py>=3.1"]
 dev = ["pytest>=7", "build>=1.0", "ruff>=0.6"]
 
