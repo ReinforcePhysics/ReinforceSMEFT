@@ -2,6 +2,10 @@
 
 `reinforcesmeft` is a Python package for reinforcement-learning searches over SMEFT operator space. It combines a linearized `flavio`/`wilson` observable backend, $\chi^2$-minimization using Minuit, and an actor-critic RL policy to discover high-quality multi-operator solutions to explain an input dataset of measurements.
 
+### Python requirement
+
+ReinforceSMEFT requires **Python 3.10–3.12**. We recommend using **Python 3.11** for the most reliable dependency compatibility.
+
 ## Installation
 
 A normal installation installs all runtime dependencies automatically, including `numpy`, `scipy`, `torch`, `flavio`, `wilson`, and `numdifftools`:
