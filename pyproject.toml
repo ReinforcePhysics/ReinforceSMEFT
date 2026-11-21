@@ -17,6 +17,7 @@ dependencies = [
   "torch>=2.0",
   "flavio>=2.5",
   "wilson>=2.4",
+  "particle<0.26",
   "numdifftools<0.11",
 ]
 

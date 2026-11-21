@@ -127,20 +127,9 @@ constraints_ewp = [
 # PATHS
 # ============================================================
 
-COEFFICIENTS_PATH = Path(
-    "/home/kumarj/links/projects/def-london/kumarj/"
-    "gitrepos/smeft-anomaly/smeft_new/"
-    "ewp_linear_coefficients_2.json"
-)
-
-OUTPUT_DIR = Path(
-    "/home/kumarj/links/scratch/anomalies"
-)
-
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
+COEFFICIENTS_PATH = Path("ewp_linear_coefficients_2.json")
+OUTPUT_DIR = Path("results")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ============================================================
