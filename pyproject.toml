@@ -26,8 +26,8 @@ mpi = ["mpi4py>=3.1"]
 dev = ["pytest>=7", "build>=1.0", "ruff>=0.6"]
 
 [project.urls]
-Homepage = "https://github.com/USERNAME/anomalies"
-Repository = "https://github.com/USERNAME/anomalies"
+Homepage = "https://github.com/ReinforcePhysics/ReinforcePhysics"
+Repository = "https://github.com/ReinforcePhysics/ReinforceSMEFT"
 
 [tool.setuptools.packages.find]
 where = ["src"]
