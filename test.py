@@ -463,7 +463,7 @@ aa = ReinforceSMEFT(
 
     hyper_para={
 
-        "n_batches": 300,
+        "n_batches": 1,
 
         "rollouts_per_batch": 25,
 
