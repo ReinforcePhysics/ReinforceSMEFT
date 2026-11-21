@@ -127,7 +127,9 @@ constraints_ewp = [
 # PATHS
 # ============================================================
 
-COEFFICIENTS_PATH = Path("ewp_linear_coefficients_2.json")
+HERE = Path(__file__).resolve().parent
+COEFFICIENTS_PATH = HERE / "linear_coefficients_2.json"
+
 OUTPUT_DIR = Path("results")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
