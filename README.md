@@ -411,12 +411,12 @@ If you use `ReinforceSMEFT` in your research, please cite:
 [arXiv:2611.21439](https://arxiv.org/abs/2611.21439)
 
 ```bibtex
-@misc{kumar2026reinforcementlearningmethodnavigate,
-      title={A Reinforcement Learning Method to Navigate SMEFT Operator Space}, 
-      author={Jacky Kumar},
-      year={2026},
-      eprint={2611.21439},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2611.21439}, 
+@article{Kumar:2026cdb,
+    author = "Kumar, Jacky",
+    title = "{A Reinforcement Learning Method to Navigate SMEFT Operator Space}",
+    eprint = "2611.21439",
+    archivePrefix = "arXiv",
+    primaryClass = "cs.LG",
+    month = "11",
+    year = "2026"
 }
