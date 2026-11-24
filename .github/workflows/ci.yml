@@ -33,6 +33,6 @@ jobs:
 
       - name: Test Docker container
 	run: |
-    	docker run --rm \
-        reinforcesmeft:test \
-      	-c "from reinforcesmeft import ReinforceSMEFT; print('Docker test passed')"
+    	  docker run --rm \
+            reinforcesmeft:test \
+      	    -c "from reinforcesmeft import ReinforceSMEFT; print('Docker test passed')"
